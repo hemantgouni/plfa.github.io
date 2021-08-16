@@ -101,7 +101,7 @@ PLFA ships with the required version of the Agda standard library, so if you clo
 If you forgot to add the `--recurse-submodules` flag, no worries, we can fix that!
 ```bash
 cd plfa/
-git submodule update --recursive
+git submodule update --init --recursive
 ```
 If you obtained PLFA by downloading the zip archive, you can get the required version of the Agda standard library from GitHub. You can either clone the repository and switch to the correct branch, or you can download the [the zip archive][agda-stdlib]:
 ```bash
