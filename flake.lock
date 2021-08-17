@@ -1,0 +1,60 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1623875721,
+        "narHash": "sha256-A8BU7bjS5GirpAUv4QA+QnJ4CceLHkcXdRp4xITDB0s=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "f7e004a55b120c02ecb6219596820fcd32ca8772",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1624913309,
+        "narHash": "sha256-HHZTzHgLuoOmTrHckl9eGG8UWTp32pYXmCoOjgQYIB4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "860b56be91fb874d48e23a950815969a7b832fbc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "860b56be91fb874d48e23a950815969a7b832fbc",
+        "type": "github"
+      }
+    },
+    "plfa": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628614312,
+        "narHash": "sha256-e5wLKKjabrZesjAd5p5sXeYW28LXoZPGY2jp6cnB9qM=",
+        "owner": "plfa",
+        "repo": "plfa.github.io",
+        "rev": "8fec0eb208e48401908414347d060767af48309f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "plfa",
+        "repo": "plfa.github.io",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "plfa": "plfa"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
