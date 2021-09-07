@@ -24,13 +24,24 @@
           src = plfa;
         })
       ]);
+      emacsWithPackages = (pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages
+      (epkgs: (with epkgs.melpaPackages; [
+        gruvbox-theme
+        agda2-mode
+        evil
+      ]) ++ (with epkgs.elpaPackages; [
+        undo-tree
+      ]));
     in {
       devShell =
         pkgs.mkShell {
           buildInputs = [
-            pkgs.emacs
+            emacsWithPackages
             agda
           ];
+          shellHook = ''
+            XDG_CONFIG_HOME=$(pwd) emacs
+          '';
         };
       });
     }
